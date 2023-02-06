@@ -1,3 +1,8 @@
 body {
     background-color: lightgray;
 }
+
+@font-face {
+    font-family: 'better_together_2';
+    src: url('/assets/fonts/BetterTogether.ttf');
+}

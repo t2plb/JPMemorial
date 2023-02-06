@@ -18,6 +18,9 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 import './styles/app.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'admin-lte/dist/css/adminlte.min.css';
+import './styles/navbar.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+import './styles/font.scss';
 
 // start the Stimulus application
 import './bootstrap';
