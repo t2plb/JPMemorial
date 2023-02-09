@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>{% block title %}Accueil{% endblock %}</title>
+    <style>
+        {% block style %}{% endblock %}
+    </style>
     {{ encore_entry_link_tags('app') }}
 </head>
 <body>
@@ -10,10 +13,12 @@
     {% include 'frontend/Components/1_preloader.html.twig' %}
     {% include 'frontend/Components/2_navbar.html.twig' %}
     {% block body %}
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
     {% endblock %}
 </div>
-
+<script>
+    {% block script %}{% endblock %}
+</script>
 {{ encore_entry_script_tags('app') }}
 </body>
+{% include 'frontend/Components/3_footer.html.twig' %}
 </html>

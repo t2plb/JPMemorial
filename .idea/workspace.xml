@@ -5,21 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e7db41ed-61b9-4781-8e42-2350c0f694cc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/fonts/BetterTogether.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/styles/font.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/styles/navbar.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/BetterTogether.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/frontend/Components/1_preloader.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/frontend/Components/2_navbar.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/ile.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/test.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/BiographieController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/MentionController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/bundles/TwigBundle/Exception/base.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/bundles/TwigBundle/Exception/error404.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/bundles/TwigBundle/Exception/error500.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/frontend/Components/3_footer.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/frontend/Pages/mention.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/styles/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/navbar.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/frontend/Components/2_navbar.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/frontend/Components/2_navbar.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/frontend/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/frontend/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
     </list>
     <list id="28f2501f-8d2c-4487-b5ad-2327ca59b385" name="Changes by Janus" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,9 +38,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
         <option value="SCSS File" />
+        <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -195,25 +198,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/titou/Documents/Dev/JPMemorial/public",
-    "list.type.of.created.stylesheet": "SCSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/titou/Documents/Dev/JPMemorial/public&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\titou\Documents\Dev\JPMemorial\public" />
@@ -276,6 +279,8 @@
       <workItem from="1675177267100" duration="1352000" />
       <workItem from="1675178644545" duration="2022000" />
       <workItem from="1675190369714" duration="18383000" />
+      <workItem from="1675763017229" duration="17925000" />
+      <workItem from="1675943856815" duration="14014000" />
     </task>
     <servers />
   </component>

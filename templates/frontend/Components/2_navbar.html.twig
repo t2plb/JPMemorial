@@ -1,31 +1,68 @@
-<nav class="navbar navbar-expand-lg bg-light">
-    <div class="container-fluid">
-        <a class="navbar-brand better-together" href="{{ path('app_main') }}">JPMemorial</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Accueil</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown link
-                    </a>
-                    <ul class="dropdown-menu ">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
+<div class="bg-img">
+    <div style="display: table-cell;
+        width: 1215px;
+        height: 380px;
+        padding: 10px;
+        vertical-align: middle;">
+        <figure class="text-center">
+            <blockquote class="blockquote">
+                <p>A well-known quote, contained in a blockquote element.</p>
+            </blockquote>
+            <figcaption class="blockquote-footer">
+                Someone famous in <cite title="Source Title">Source Title</cite>
+            </figcaption>
+        </figure>
     </div>
-</nav>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-shrink">
+        <div class="container-fluid">
+            <a class="navbar-brand better-together text-white" href="#">JPM</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled text-white">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+<script>
+    //Record how many pixels are scrolled vertically
+    let scrollpos = window.scrollY
+
+    const nav = document.querySelector("nav")
+
+    //How many pixels you need to scroll to add a class. You can change the value
+    const scrollChange = 10
+
+    //The function that will add the class
+    const add_class_on_scroll = () => nav.classList.add("bg-dark")
+    const remove_class_on_scroll = () => nav.classList.remove("bg-transparent")
+    const add_class_scroll = () => nav.classList.add("bg-transparent")
+    const remove_class_scroll = () => nav.classList.remove("bg-dark")
+    //Tracking a "scroll" event
+    window.addEventListener('scroll', function() {
+        scrollpos = window.scrollY;
+
+//If we scrolled more than we specified in the scrollChange variable, the add class function is executed
+        if (scrollpos >= scrollChange) {
+            add_class_on_scroll()
+            remove_class_on_scroll()
+        }else{
+            add_class_scroll()
+            remove_class_scroll()
+        }
+    })
+</script>

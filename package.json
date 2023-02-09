@@ -28,6 +28,7 @@
     },
     "dependencies": {
         "copy-webpack-plugin": "^11.0.0",
-        "fontawesome-free": "^1.0.4"
+        "fontawesome-free": "^1.0.4",
+        "startbootstrap-agency": "^7.0.11"
     }
 }

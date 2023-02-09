@@ -1,3 +1,25 @@
 .better-together{
     font-family: BetterTogether, serif;
+    margin-top: 0.30rem;
+}
+.bg-img {
+    /* The image used */
+    background-image: url("/public/img/arzew-1939-CAM.jpg");
+
+    height: 380px;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%, 100%;
+
+    /* Needed to position the navbar */
+    position: relative;
+}
+
+.voile{
+    width: 200px;
+    height: 100px;
+    background: red;
+    opacity: 0.3;
 }

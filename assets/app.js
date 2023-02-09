@@ -12,7 +12,7 @@ const $ = require('jquery');
 global.$ = global.jQuery = $;
 
 import 'admin-lte/dist/js/adminlte.min';
-import 'bootstrap/dist/js/bootstrap.bundle.min';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 // any CSS you import will output into a single css file (app.css in this case)
 import './styles/app.css';
