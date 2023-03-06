@@ -1,10 +1,101 @@
+{% if app.request.cookies.get('theme')  != '' %}
+    {% set theme = app.request.cookies.get('theme') %}
+{% else %}
+    {% set theme = 'light' %}
+{% endif %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <link rel="icon" type="image/png" href="{{ asset('img/logo.png') }}" />
+    <title>
+        {% block title %}
+            {{ page|raw }}
+        {% endblock %}
+    </title>
+    <style>
+        {% block style %}{% endblock %}
+    </style>
+    {{ encore_entry_link_tags('app') }}
 </head>
-<body>
-
+<body class="bg-gray-light">
+{{ stimulus_controller('darkbutton') }}
+<div class="wrapper {{ theme|raw }}-mode" style="padding-top: 70px" {{ stimulus_target('darkbutton', 'wrapper') }}>
+    {% include 'backend/Components/1_headerbar.html.twig' %}
+    {% block body %}
+        <div class="row" {{ stimulus_controller('gestprod/badgester/badge') }}>
+            <div class="col-12 col-md-7 ml-5">
+                <div class="card card-outline card-danger mx-auto">
+                    <div class="card-header">
+                        <div class="card-tools">
+                            <button type="button" class="btn btn-primary float-right btn-sm" {{ stimulus_action('gestprod/badgester/badge', 'add') }}>
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-body table-responsive p-0">
+                        <table class="table table-hover text-nowrap table-striped table-sm" {{ stimulus_target('gestprod/badgester/badge', 'table') }}>
+                            <thead>
+                            <tr>
+                                <th scope="col">Auteur</th>
+                                <th scope="col">Citation</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {% for citation in citations %}
+                                <tr class="pointer" data-id="{{ citation.id }}">
+                                    <th>{{ citation.auteur }}</th>
+                                    <td>{{ citation.citation }}</td>
+                                </tr>
+                            {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <section class="col-12 col-md-3 ml-5">
+                <div class="card card-outline card-danger">
+                    <form class="zone-edit" {{ stimulus_target('gestprod/badgester/badge', 'form') }} >
+                        <fieldset class="field" disabled>
+                            <div class="card-body">
+                                <div class="form-group d-none">
+                                    <label for="id">ID</label>
+                                    <input type="number" class="form-control" id="id" name="id">
+                                </div>
+                                <div class="form-row">
+                                    <div class="col-12 col-xxl-6">
+                                        <div class="form-group">
+                                            <label for="auteur">Auteur</label>
+                                            <input type="text" class="form-control" id="auteur" name="auteur" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-xxl-6">
+                                        <div class="form-group">
+                                            <label for="citation">Citation</label>
+                                            <input type="text" class="form-control" id="citation" name="citation" required>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <button type="submit" class="d-none"></button>
+                                <button type="button" class="btn btn-success btn-sm" {{ stimulus_action('gestprod/badgester/badge', 'submit') }}>
+                                    Valider
+                                </button>
+                                <button type="button" class="btn btn-danger btn-sm" id="cancel" {{ stimulus_action('gestprod/badgester/badge', 'cancel') }}>
+                                    Annuler
+                                </button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </section>
+        </div>
+    {% endblock %}
+</div>
+<script>
+    {% block script %}{% endblock %}
+</script>
+{{ encore_entry_script_tags('app') }}
 </body>
 </html>

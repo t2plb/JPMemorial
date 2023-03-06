@@ -1,37 +1,37 @@
 <div class="bg-img">
-    <div style="display: table-cell;
-        width: 1215px;
-        height: 380px;
-        padding: 10px;
-        vertical-align: middle;">
+    <div style="height: 90%;
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;">
+        {% if citation is defined and auteur is defined %}
         <figure class="text-center">
-            <blockquote class="blockquote">
-                <p>A well-known quote, contained in a blockquote element.</p>
+            <blockquote style="border-left: 0.7rem solid #007bff00" class="blockquote bg-transparent text-white">
+                <p>{{ citation }}</p>
             </blockquote>
             <figcaption class="blockquote-footer">
-                Someone famous in <cite title="Source Title">Source Title</cite>
+                {{ auteur }}
             </figcaption>
         </figure>
+        {% else %}
+        {% endif %}
     </div>
     <nav class="navbar navbar-expand-lg fixed-top navbar-shrink">
         <div class="container-fluid">
-            <a class="navbar-brand better-together text-white" href="#">JPM</a>
+            <a class="navbar-brand better-together text-white" href="{{ path('app_main') }}">JPM</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+                        <a class="nav-link text-white" aria-current="page" href="#">Français</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Features</a>
+                        <a class="nav-link text-white" href="#">Mathématiques</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled text-white">Disabled</a>
+                        <a class="nav-link text-white" href="{{ path('app_mention') }}">About</a>
                     </li>
                 </ul>
             </div>

@@ -4,14 +4,16 @@
 }
 .bg-img {
     /* The image used */
-    background-image: url("/public/img/arzew-1939-CAM.jpg");
-
+    background: linear-gradient(
+            rgba(0, 0, 0, 0.45),
+            rgba(0, 0, 0, 0.45)
+    ),url("/public/img/arzew-1939-CAM.jpg");
     height: 380px;
 
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 100%, 100%;
+    background-size: cover;
 
     /* Needed to position the navbar */
     position: relative;

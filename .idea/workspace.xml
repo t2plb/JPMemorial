@@ -5,22 +5,59 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e7db41ed-61b9-4781-8e42-2350c0f694cc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/public/img/ile.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/test.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/BiographieController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/MentionController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/bundles/TwigBundle/Exception/base.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/bundles/TwigBundle/Exception/error404.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/bundles/TwigBundle/Exception/error500.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/frontend/Components/3_footer.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/frontend/Pages/mention.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/controllers/darkbutton_controller.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/lib/Cookie.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/lib/Theme.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/styles/darkbutton.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/styles/flipcard.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/styles/table.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/Version20230221151306.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/Version20230222183547.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/Version20230223100804.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/admin.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/quote.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/test.png.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/user.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/MainBackendController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/RegistrationController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/TestController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/Quotation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Form/RegistrationFormType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/QuotationRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Security/CredentialAuthenticator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/backend/Components/1_headerbar.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/backend/Components/2_leftbar.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/backend/Pages/login.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/backend/logout.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/frontend/Pages/home.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/registration/register.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/test/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/JPMemorial.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/JPMemorial.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/bootstrap.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/styles/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/styles/navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/navbar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20230130195747.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/test.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/test.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Command/MakeAdminCommand.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/LoginController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/MainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MainController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/MentionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MentionController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Credential.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Credential.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Service/CredentialManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/backend/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/backend/base.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/frontend/Components/2_navbar.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/frontend/Components/2_navbar.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/frontend/Components/3_footer.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/frontend/Components/3_footer.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/frontend/Pages/mention.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/frontend/Pages/mention.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/frontend/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/frontend/base.html.twig" afterDir="false" />
     </list>
     <list id="28f2501f-8d2c-4487-b5ad-2327ca59b385" name="Changes by Janus" comment="" />
@@ -38,10 +75,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="SCSS File" />
         <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -188,6 +225,9 @@
       <path value="$PROJECT_DIR$/vendor/symfony/form" />
       <path value="$PROJECT_DIR$/vendor/sebastian/global-state" />
       <path value="$PROJECT_DIR$/vendor/twbs/bootstrap" />
+      <path value="$PROJECT_DIR$/vendor/friendsofsymfony/rest-bundle" />
+      <path value="$PROJECT_DIR$/vendor/willdurand/negotiation" />
+      <path value="$PROJECT_DIR$/vendor/willdurand/jsonp-callback-validator" />
     </include_path>
   </component>
   <component name="ProjectId" id="2KrpMAVpCEhLXFB21sxp9wkmpUL" />
@@ -198,31 +238,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/titou/Documents/Dev/JPMemorial/public&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/titou/OneDrive/Documents/Dev/JPMemorial",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.updates",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\titou\Documents\Dev\JPMemorial" />
       <recent name="C:\Users\titou\Documents\Dev\JPMemorial\public" />
       <recent name="C:\Users\titou\Documents\Dev\JPMemory" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\titou\Documents\Dev\JPMemorial\templates\backend\Pages" />
       <recent name="C:\Users\titou\Documents\Dev\JPMemorial\assets\fonts" />
       <recent name="C:\Users\titou\Documents\Dev\JPMemorial\assets" />
       <recent name="C:\Users\titou\Documents\Dev\JPMemorial\public" />
@@ -280,7 +322,11 @@
       <workItem from="1675178644545" duration="2022000" />
       <workItem from="1675190369714" duration="18383000" />
       <workItem from="1675763017229" duration="17925000" />
-      <workItem from="1675943856815" duration="14014000" />
+      <workItem from="1675943856815" duration="14209000" />
+      <workItem from="1676719026980" duration="1512000" />
+      <workItem from="1676905895397" duration="817000" />
+      <workItem from="1676988127528" duration="52489000" />
+      <workItem from="1677937891630" duration="7632000" />
     </task>
     <servers />
   </component>

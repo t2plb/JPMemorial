@@ -2,7 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>{% block title %}Accueil{% endblock %}</title>
+    <link rel="icon" type="image/png" href="{{ asset('img/logo.png') }}" />
+    <title>
+        {% block title %}
+            {{ page|raw }}
+        {% endblock %}
+    </title>
     <style>
         {% block style %}{% endblock %}
     </style>
@@ -11,8 +16,71 @@
 <body>
 <div class="wrapper">
     {% include 'frontend/Components/1_preloader.html.twig' %}
-    {% include 'frontend/Components/2_navbar.html.twig' %}
+    {% if citations is defined %}
+    {% include 'frontend/Components/2_navbar.html.twig' with {'citation' : citations.citation, 'auteur' : citations.auteur} %}
+    {% else %}
+    {% include 'frontend/Components/2_navbar.html.twig'%}
+    {% endif %}
     {% block body %}
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-12">
+                    <div class="card mt-4">
+                        <div class="card-header text-center">
+                            <h1>Sa biographie, son histoire</h1>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <img src="https://via.placeholder.com/150" class="img-fluid ml-5 mb-5 mt-5" alt="...">
+                                </div>
+                                <div class="col-sm-9">
+                                    <p class="mt-0 mb-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam faucibus faucibus tellus consectetur commodo. Cras consectetur, sem sit amet posuere porttitor, justo eros volutpat mi, in viverra tellus lacus rhoncus ipsum. Nunc molestie aliquam mi, in consectetur mauris efficitur at. Quisque vel purus sit amet urna porta efficitur. fhgezjfeklgjiodhrzeioge vzrigziehge' "rerior rgioriagu ertr getr zfithrzjkjferf thrgeher uuergef ferghzifzeh foerzhd fd ruzfiafhgerzfihezuif rqdshguizef rzeheruiqshg zaifhezr qsvgfaz fuizefh fifueahfuiqhvzamfhzdhffofez guezrhqfzr dfdfiergfnzjeqgheufgheriughdfgidhguzefheuiufhdfjhgfbqdvkhjhezbfkdfgbiuvhzhefobffhjsfbgiuzebvehjfbsfkgbekvbrifndbfdfiufbsffkjgjbzvuerbffuisbhzkjfbrusdbgziuefsdkurghqskhgbzifbzekufdfghgfuikqhfgzeirgfeiruthrziufgghzekvgzgiudbeiruqvufzbfjerbrsqfbazifbzeiyebdfjutgsqdjhjvfbzeuidfbdrryursdjuggzejfberryusbfuzebgfgieurrtrhqriuthsighzeikfgzeicheriurbsfiuebfdiutbsqiufgbzeiugubzeiufberifbsqigutzhgiuebfierfrgsdiuthbzeiughzeuidghehruirshtuizehgieurfheuirhf fuizgtfuirgtieugfzeiufgeriufdgtuisdfgtiyusudfgzqeuyygsquifgzqeiuf zefgzgttt etys tertgze er grt qzer ter tsr t er t ergt ert qre d g er grte gret</p>
+                                </div>
+                            </div>
+                            <div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam faucibus faucibus tellus consectetur commodo. Cras consectetur, sem sit amet posuere porttitor, justo eros volutpat mi, in viverra tellus lacus rhoncus ipsum. Nunc molestie aliquam mi, in consectetur mauris efficitur at. Quisque vel purus sit amet urna porta efficitur. Nulla faucibus metus pharetra, volutpat dui vel, luctus orci. Aliquam facilisis bibendum urna, eu porttitor elit blandit ullamcorper. Vestibulum non varius nunc. Phasellus elementum lorem ac dolor tincidunt lacinia. Aenean ac dolor suscipit, congue arcu sit amet, sollicitudin mi. Nunc elementum dui et metus imperdiet, dapibus bibendum lectus ornare. Maecenas eget condimentum lectus. Proin mollis sagittis maximus. Integer vehicula, lacus porttitor vehicula efficitur, nunc mauris auctor tellus, id volutpat justo dolor ultricies erat. Vivamus feugiat lacus ante, ut aliquet ipsum sodales eget. Nullam faucibus, nisi placerat placerat pellentesque, ex libero luctus leo, posuere mattis massa quam eu dui. In at libero ut libero porttitor dapibus id eu diam.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md">
+                    <figure class="text-center">
+                        <blockquote style="border-left: 0.7rem solid #007bff00" class="blockquote bg-transparent">
+                            <p>Une citation</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer">
+                            <img src="{{ asset("img/logo.png") }}" alt="L'image ronde" class="rounded-circle" width="30" height="30">
+                            Un auteur - Sa femme
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-md">
+                    <figure class="text-center">
+                        <blockquote style="border-left: 0.7rem solid #007bff00" class="blockquote bg-transparent">
+                            <p>Une citation</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer">
+                            <img src="{{ asset("img/logo.png") }}" alt="L'image ronde" class="rounded-circle" width="30" height="30">
+                            Un auteur - Son fils
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-md">
+                    <figure class="text-center">
+                        <blockquote style="border-left: 0.7rem solid #007bff00" class="blockquote bg-transparent">
+                            <p>Une citation</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer">
+                            <img src="{{ asset("img/logo.png") }}" alt="L'image ronde" class="rounded-circle" width="30" height="30">
+                            Un auteur - Sa fille
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
     {% endblock %}
 </div>
 <script>

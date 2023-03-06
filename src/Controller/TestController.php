@@ -6,14 +6,13 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-class MentionController extends AbstractController
+class TestController extends AbstractController
 {
-    #[Route('/mention', name: 'app_mention')]
+    #[Route('/test', name: 'app_test')]
     public function index(): Response
     {
-        return $this->render('frontend/Pages/mention.html.twig', [
-            'page' => 'Mention légales',
-            'controller_name' => 'MentionController',
+        return $this->render('test/index.html.twig', [
+            'controller_name' => 'TestController',
         ]);
     }
 }

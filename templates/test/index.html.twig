@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="{{ asset('img/logo.png') }}" />
+    <title>Test
+    </title>
+    <!-- Charger Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" integrity="sha512-...">
+    <style>
+        body {
+            background-image: url('https://wallpaperaccess.com/full/16668.jpg');
+            background-size: cover;
+            background-position: center center;
+        }
+        .container {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        span.required::after {
+            content: "*";
+            color: red;
+        }
+    </style>
+    {{ encore_entry_link_tags('app') }}
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-header">
+                    Header 1
+                </div>
+                <div class="card-body">
+                    Body 1<br>
+                    grfef<br>
+                    frefg<br>
+                    dzelf<br>
+                </div>
+                <div class="card-footer">
+                    Footer 1
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-header">
+                    Header 2
+                </div>
+                <div class="card-body">
+                    Body 2
+                </div>
+                <div class="card-footer">
+                    Footer 2
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Charger Bootstrap JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js" integrity="sha512-..."></script>
+</body>
+</html>

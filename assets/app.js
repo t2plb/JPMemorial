@@ -21,6 +21,10 @@ import 'admin-lte/dist/css/adminlte.min.css';
 import './styles/navbar.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import './styles/font.scss';
+import './styles/darkbutton.scss';
+import './styles/flipcard.css'
 
 // start the Stimulus application
 import './bootstrap';
+import '@hotwired/stimulus';
+import './controllers/darkbutton_controller'
