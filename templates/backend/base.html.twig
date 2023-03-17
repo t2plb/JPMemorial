@@ -21,6 +21,7 @@
 <body class="bg-gray-light">
 {{ stimulus_controller('darkbutton') }}
 <div class="wrapper {{ theme|raw }}-mode" style="padding-top: 70px" {{ stimulus_target('darkbutton', 'wrapper') }}>
+    {% include 'backend/Components/0_preloader.html.twig' %}
     {% include 'backend/Components/1_headerbar.html.twig' %}
     {% block body %}
         <div class="row" {{ stimulus_controller('gestprod/badgester/badge') }}>
